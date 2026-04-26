@@ -272,47 +272,42 @@
           </h2>
           <p class="text-slate-500 font-bold">Réponse garantie sous 24h.</p>
         </div>
-        <form
-          action="mailto:orvanexus@gmail.com"
-          method="post"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          enctype="text/plain"
-          class="md:w-1/2 w-full space-y-4"
-        >
-          <p class="hidden">
-            <label
-              >Don't fill this out if you're human: <input name="bot-field"
-            /></label>
-          </p>
-          <input
-            type="text"
-            name="nom"
-            placeholder="Votre Nom"
-            class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
-            required
-          />
-          <input
-            type="email"
-            name="email_client"
-            placeholder="Votre Email"
-            class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
-            required
-          />
-          <textarea
-            name="message"
-            rows="4"
-            placeholder="Votre Projet..."
-            class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
-            required
-          ></textarea>
-          <button
-            type="submit"
-            class="w-full py-5 bg-orva-cyan text-white font-black uppercase tracking-widest rounded-2xl hover:bg-slate-900 transition shadow-xl shadow-cyan-100"
-          >
-            Envoyer
-          </button>
-        </form>
+       <form
+  action="https://formspree.io/f/xnjlyjnp" 
+  method="POST"
+  class="md:w-1/2 w-full space-y-4"
+>
+  <input
+    type="text"
+    name="nom"
+    placeholder="Votre Nom"
+    class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
+    required
+  />
+  
+  <input
+    type="email"
+    name="email"
+    placeholder="Votre Email"
+    class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
+    required
+  />
+  
+  <textarea
+    name="message"
+    rows="4"
+    placeholder="Décrivez votre projet"
+    class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
+    required
+  ></textarea>
+  
+  <button
+    type="submit"
+    class="w-full py-5 bg-orva-cyan text-white font-black uppercase tracking-widest rounded-2xl hover:bg-slate-900 transition shadow-xl shadow-cyan-100"
+  >
+    Envoyer le brief
+  </button>
+</form>
       </div>
     </section>
 
