@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Forçage absolu du collage en haut */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* Si un espace blanc persiste, c'est souvent un margin sur le h1 ou une autre balise */
+  * {
+    margin-top: 0;
+  }
+}
+
+/* On réduit la taille du flou pour ne pas déborder */
+.ultra-glass {
+  backdrop-filter: blur(10px) !important;
+  margin: 0 !important;
+}

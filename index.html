@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORVA NEXUS | Digital Revolution</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+
+      /* Animation de flottement pour les cartes */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      .delay-1 {
+        animation-delay: 1s;
+      }
+      .delay-2 {
+        animation-delay: 2s;
+      }
+
+      /* Effet de glassmorphism plus poussé */
+      .ultra-glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <div class="fixed inset-0 z-[-1]">
+      <img
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000"
+        class="w-full h-full object-cover opacity-20 grayscale"
+        alt="Background"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white/80"
+      ></div>
+    </div>
+
+    <nav
+      class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+      <div class="flex items-center gap-3">
+        <span class="text-xl font-bold tracking-widest text-slate-800">ORVA <span class="text-orva-cyan">NEXUS</span></span>
+      </div>
+        <ul
+          class="hidden md:flex gap-10 font-bold uppercase text-[11px] tracking-[0.3em] text-slate-600"
+        >
+          <li>
+            <a href="#accueil" class="hover:text-orva-cyan transition"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="hover:text-orva-cyan transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-orva-cyan transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <a
+          href="https://wa.me/221755702463"
+          target="_blank"
+          class="hidden md:block bg-orva-cyan text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-cyan-200 hover:scale-105 transition"
+          >Ecrivez-nous sur Whatsapp</a
+        >
+      </div>
+      <button id="mobile-menu-button" class="md:hidden text-slate-900 p-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md flex flex-col items-center py-8 gap-6 shadow-xl border-t border-slate-100 md:hidden">
+        <a href="#accueil" class="text-slate-900 font-bold uppercase tracking-widest text-sm">Accueil</a>
+        <a href="#services" class="text-slate-900 font-bold uppercase tracking-widest text-sm">Services</a>
+        <a href="#contact" class="text-slate-900 font-bold uppercase tracking-widest text-sm">Contact</a>
+        <a href="https://wa.me/221755702463" target="_blank" class="bg-orva-cyan text-white px-8 py-3 rounded-full font-bold">Ecrivez-nous sur Whatsapp</a>
+    </div>
+    </nav>
+
+    <section id="accueil" class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32 overflow-hidden selection:bg-orva-cyan/30">
+  
+  <div class="absolute left-[-5%] top-1/4 opacity-15 pointer-events-none transform scale-x-[-1]">
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_m6w86xef.json" background="transparent" speed="0.8" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+  </div>
+  <div class="absolute right-[-5%] bottom-1/4 opacity-20 pointer-events-none">
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_gh5y5e4c.json" background="transparent" speed="0.8" style="width: 350px; height: 350px;" loop autoplay></lottie-player>
+  </div>
+
+  <div class="flex flex-col items-center gap-6 mb-16 relative z-10">
+    <div class="inline-block relative">
+        <img 
+            src="logo.png" 
+            alt="ORVA NEXUS" 
+            class="h-60 md:h-80 w-auto object-contain transform hover:scale-105 transition-all duration-700 ease-out animate-tech-fade-in" 
+        />
+        <div class="absolute inset-0 bg-orva-cyan opacity-20 rounded-full blur-[80px] pointer-events-none"></div>
+    </div>
+  
+  </div>
+
+  <h1 class="text-2xl md:text-5xl font-extrabold mb-6 tracking-tight text-slate-900 uppercase leading-tight animate-tech-fade-in delay-1">
+    L'ingénieurie <span class="text-orva-cyan">Informatique</span> <br />
+    au sein de votre <span class="text-orva-cyan">Structure</span>
+  </h1>
+
+
+  <p class="text-slate-500 max-w-xl text-lg md:text-xl mb-12 font-medium leading-relaxed relative z-10 animate-tech-fade-in delay-3">
+    Nous concevons des écosystèmes logiciels sur-mesure pour automatiser et piloter votre activité. Des solutions Web aux systèmes de gestion locaux, nous bâtissons l'outil qui s'adapte à vos besoins
+  </p>
+  
+  <a href="#services" class="group relative px-14 py-6 bg-slate-900 text-white rounded-3xl font-black text-sm overflow-hidden transition-all duration-300 shadow-2xl shadow-slate-900/30 hover:shadow-cyan-900/30 hover:scale-105 transform active:scale-95 z-10 animate-tech-fade-in delay-4">
+    <span class="relative z-10 uppercase tracking-[0.2em]">Voir nos services</span>
+    <div class="absolute inset-0 bg-orva-cyan translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+    <svg class="w-5 h-5 ml-2 inline-block relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+  </a>
+
+</section>
+
+<style>
+  @keyframes techFadeIn {
+    from { opacity: 0; transform: translateY(30px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .animate-tech-fade-in { animation: techFadeIn 1.2s ease-out forwards; }
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+  .delay-4 { animation-delay: 0.8s; }
+</style>
+
+    <section id="services" class="py-32 px-8 max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div
+          class="animate-float ultra-glass p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200 border-none group"
+        >
+          <div class="h-40 overflow-hidden rounded-2xl mb-8">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+            />
+          </div>
+          <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic">
+            Developpement Web & logiciels
+          </h3>
+          <p class="text-slate-500 font-medium">
+            Propulsez votre présence en ligne avec des plateformes robustes et évolutives, conçues pour transformer chaque clic en opportunité commerciale concrète
+          </p>
+        </div>
+
+        <div
+          class="animate-float delay-1 bg-slate-900 p-10 rounded-[2.5rem] shadow-2xl shadow-cyan-900/20 group text-white"
+        >
+          <div class="h-40 overflow-hidden rounded-2xl mb-8">
+            <img
+              src="Carte_nfc.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+            />
+          </div>
+          <h3 class="text-2xl font-black mb-4 uppercase italic text-orva-cyan">
+            Cartes NFC
+          </h3>
+          <p class="text-slate-300 font-medium">
+            Révolutionnez votre réseau. Échangez vos coordonnées d'un simple geste et marquez les esprits avec une technologie sans contact élégante et écologique
+          </p>
+        </div>
+
+        <div
+          class="animate-float delay-2 ultra-glass p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200 border-none group"
+        >
+          <div class="h-40 overflow-hidden rounded-2xl mb-8">
+            <img
+              src="maps.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+            />
+          </div>
+          <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic">
+            Référencement google Maps
+          </h3>
+          <p class="text-slate-500 font-medium">
+            Dominez le marché local. Devenez le premier choix de vos clients en apparaissant au sommet des recherches géolocalisées quand ils ont besoin de vous
+          </p>
+        </div>
+         <div
+          class="animate-float delay-2 ultra-glass p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200 border-none group"
+        >
+          <div class="h-40 overflow-hidden rounded-2xl mb-8">
+            <img
+              src="digitalisation.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+            />
+          </div>
+          <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic">
+            Digitalisation des processus métier
+          </h3>
+          <p class="text-slate-500 font-medium">
+           Libérez votre temps. Nous automatisons vos tâches répétitives pour vous permettre de vous concentrer sur ce qui compte vraiment : la croissance de votre entreprise
+          </p>
+        </div>
+        <div
+          class="animate-float delay-1 bg-slate-900 p-10 rounded-[2.5rem] shadow-2xl shadow-cyan-900/20 group text-white"
+        >
+          <div class="h-40 overflow-hidden rounded-2xl mb-8">
+            <img
+              src="Affiche_page-0001.jpg"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+            />
+          </div>
+          <h3 class="text-2xl font-black mb-4 uppercase italic text-orva-cyan">
+            Affiches & supports publicitaires
+          </h3>
+          <p class="text-slate-300 font-medium">
+            Captez l'attention instantanément. Des designs visuels percutants qui affirment votre identité de marque et renforcent votre crédibilité sur tous les supports
+          </p>
+        </div>
+         <div
+          class="animate-float delay-2 ultra-glass p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200 border-none group"
+        >
+          <div class="h-40 overflow-hidden rounded-2xl mb-8">
+            <img
+              src="maintanance.png"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+            />
+          </div>
+          <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic">
+            Maintenance & fiabilité système
+          </h3>
+          <p class="text-slate-500 font-medium">
+            Zéro interruption, performance maximale. Nous veillons sur vos infrastructures 24/7 pour garantir la continuité et la sécurité totale de vos opérations numériques
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-32 px-8">
+      <div
+        class="max-w-5xl mx-auto ultra-glass p-16 rounded-[4rem] shadow-2xl flex flex-col md:flex-row gap-16 items-center"
+      >
+        <div class="md:w-1/2">
+          <h2
+            class="text-5xl font-black mb-6 leading-none text-slate-900 uppercase"
+          >
+            Faisons <br /><span class="text-orva-cyan">Équipe.</span>
+          </h2>
+          <p class="text-slate-500 font-bold">Réponse garantie sous 24h.</p>
+        </div>
+        <form
+          action="mailto:orvanexus@gmail.com"
+          method="post"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          enctype="text/plain"
+          class="md:w-1/2 w-full space-y-4"
+        >
+          <p class="hidden">
+            <label
+              >Don't fill this out if you're human: <input name="bot-field"
+            /></label>
+          </p>
+          <input
+            type="text"
+            name="nom"
+            placeholder="Votre Nom"
+            class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
+            required
+          />
+          <input
+            type="email"
+            name="email_client"
+            placeholder="Votre Email"
+            class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
+            required
+          />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Votre Projet..."
+            class="w-full p-5 bg-white rounded-2xl border-none shadow-inner focus:ring-2 focus:ring-orva-cyan outline-none"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full py-5 bg-orva-cyan text-white font-black uppercase tracking-widest rounded-2xl hover:bg-slate-900 transition shadow-xl shadow-cyan-100"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-8 px-8 text-center bg-white border-t border-slate-100">
+      <div class="flex flex-col items-center gap-12">
+        
+
+        <div class="flex gap-12">
+          <a
+            href="https://wa.me/221755702463"
+            target="_blank"
+            class="text-slate-400 hover:text-green-500 transition-all scale-125"
+          >
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.tiktok.com/@orvanexus?_r=1&_d=f16k648jm7kd5d&sec_uid=MS4wLjABAAAAGn1dgIGIwlGII9fdX--RXHMaPGoa9shxwnJsZpCgUiy4bDaTkcoiJq5Ss69K7lNZ&share_author_id=6983661746774885381&sharer_language=fr&source=h5_m&u_code=djfcc3ij3j7bc2&item_author_type=1&utm_source=copy&tt_from=copy&enable_checksum=1&utm_medium=ios&share_link_id=4B747C8D-BAB2-46B0-8FC2-C0B3569D4345&user_id=6983661746774885381&sec_user_id=MS4wLjABAAAAGn1dgIGIwlGII9fdX--RXHMaPGoa9shxwnJsZpCgUiy4bDaTkcoiJq5Ss69K7lNZ&social_share_type=4&ug_btm=b8727,b0&utm_campaign=client_share&share_app_id=1233"
+            target="_blank"
+            class="text-slate-400 hover:text-black transition-all scale-125"
+          >
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 448 512">
+              <path
+                d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.32c7.87 33.32 31.27 60.36 64.07 70.92A121.32 121.32 0 0 0 448 109z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:orvanexus@gmail.com"
+            target="_blank"
+            class="text-slate-400 hover:text-orva-cyan transition-all scale-125"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <p
+          class="text-[10px] text-slate-300 font-bold tracking-[0.5em] uppercase"
+        >
+          @ 2026 ORVA NEXUS • TOUS DROITS RÉSERVÉS
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("opacity-100", "translate-y-0");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document.querySelectorAll("section, .ultra-glass, h1").forEach((el) => {
+        el.classList.add(
+          "opacity-0",
+          "translate-y-12",
+          "transition-all",
+          "duration-1000",
+        );
+        observer.observe(el);
+      });
+      const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+
+    // Ferme le menu quand on clique sur un lien
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+    });
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
